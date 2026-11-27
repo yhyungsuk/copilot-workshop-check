@@ -165,7 +165,7 @@
         <summary>내 칩 종류를 직접 확인하는 방법</summary>
         <ul>
           <li><strong>Windows</strong> — 설정 → 시스템 → 정보 → <strong>시스템 종류</strong>. “x64 기반”이면 x64, “ARM 기반”이면 ARM</li>
-          <li><strong>Mac</strong> — 왼쪽 위  로고 → <strong>이 Mac에 관하여</strong>. “칩: Apple…”이면 Silicon, “프로세서: Intel…”이면 Intel</li>
+          <li><strong>Mac</strong> — 왼쪽 위 애플 로고 → <strong>이 Mac에 관하여</strong>. “칩: Apple…”이면 Silicon, “프로세서: Intel…”이면 Intel</li>
         </ul>
       </details>
     </section>
@@ -297,7 +297,7 @@
       }
       const conf = '<span class="conf ' + env.confidence + '">' + CONF_LABEL[env.confidence] + "</span>";
       let hint = "";
-      if (env.confidence !== "high") hint = "확실도가 높지 않으니 위 ‘직접 확인하는 방법’으로 한 번 더 확인해 주세요.";
+      if (env.confidence !== "high") hint = "확실도가 높지 않으니 아래 ‘직접 확인하는 방법’으로 한 번 더 확인해 주세요.";
       if (env.reason) hint = env.reason + " " + hint;
       reco.innerHTML = "<small>내려받을 앱</small><strong>" + DOWNLOAD_LABEL[env.chip] + "</strong>" + conf +
         (hint ? "<small>" + hint + "</small>" : "");
